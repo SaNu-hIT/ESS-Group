@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="4dp">
+        <glog.leeway.com.home_page.Customfont.TextView_Lato
+            android:layout_width="wrap_content"
+            android:id="@+id/invoice_id"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bg"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/view_id"
+                android:background="@color/colorPrimary"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <glog.leeway.com.home_page.Customfont.TextView_Lato
+                    android:id="@+id/cust_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/person_black"
+                    android:text="Meeting with Adrian"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/heading_layout"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/gree_circle"></View>
+
+                    <glog.leeway.com.home_page.Customfont.TextView_Lato
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="CONFIRMED"
+
+                        android:id="@+id/confirmed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/description_content"
+                    android:layout_below="@+id/cust_name"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <glog.leeway.com.home_page.Customfont.TextView_Lato
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+
+        android:id="@+id/phonenumber_txt"
+        android:layout_gravity="center|left"
+        android:gravity="center|left"
+        android:drawableLeft="@drawable/phone"
+        android:layout_height="wrap_content"
+        android:text="Lorium Spectrum."/>
+
+
+    <glog.leeway.com.home_page.Customfont.TextView_Lato
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center|left"
+        android:gravity="center|left"
+
+        android:id="@+id/alternative_phonenumber"
+        android:layout_height="wrap_content"
+        android:text="Lorium Spectrum."/>
+</LinearLayout>
+
+                    <glog.leeway.com.home_page.Customfont.TextView_Lato
+                        android:layout_width="match_parent"
+                        android:id="@+id/email_id"
+
+                        android:gravity="center|start"
+                        android:drawableLeft="@drawable/email"
+                        android:layout_height="wrap_content"
+                        android:text="Lorium Spectrum."/>
+
+                    <glog.leeway.com.home_page.Customfont.TextView_Lato
+                        android:layout_width="match_parent"
+                        android:id="@+id/subcategory"
+android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:text="Lorium Spectrum."/>
+       <glog.leeway.com.home_page.Customfont.TextView_Lato
+                        android:layout_width="match_parent"
+                        android:id="@+id/amount_of_event"
+           android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:text="Lorium Spectrum."/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+                        <glog.leeway.com.home_page.Customfont.TextView_Lato
+                            android:layout_width="match_parent"
+                            android:id="@+id/tax_amt"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Lorium Spectrum."/>
+                        <glog.leeway.com.home_page.Customfont.TextView_Lato
+                            android:layout_width="match_parent"
+                            android:id="@+id/advance_amount"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Lorium Spectrum."/>
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

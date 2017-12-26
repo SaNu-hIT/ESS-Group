@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        card_view:cardCornerRadius="2dp"
+     >
+        <glog.leeway.com.home_page.Customfont.TextView_Lato
+            android:layout_width="wrap_content"
+            android:id="@+id/invoice_id"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bg"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <glog.leeway.com.home_page.Customfont.TextView_Lato
+                    android:id="@+id/item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    android:text="name"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    />
+
+
+
+
+                <glog.leeway.com.home_page.Customfont.TextView_Lato
+                    android:id="@+id/qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight="1"
+                    android:text="quantity"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    />
+
+                <glog.leeway.com.home_page.Customfont.TextView_Lato
+                    android:id="@+id/rate_peritem"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="rateper"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    />
+
+                <glog.leeway.com.home_page.Customfont.TextView_Lato
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="total"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

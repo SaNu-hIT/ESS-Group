@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+        android:src="@drawable/bacj_icons"
+            android:layout_gravity="center"
+            android:onClick="onBackPressed"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+        <glog.leeway.com.home_page.Customfont.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item details"
+            android:textColor="#ffff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/hide_layout_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+
+                >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="CUSTOMER INFORMATION"
+                                android:textColor="#daf4f1f1"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+
+                                />
+                        </LinearLayout>
+
+                        <glog.leeway.com.home_page.Customfont.MyEditText
+                            android:id="@+id/customarname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border"
+                            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                            android:hint="Custmer Nmae"
+                            android:letterSpacing="0.02"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="12dp" />
+
+                        <glog.leeway.com.home_page.Customfont.MyEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/border"
+                            android:drawableLeft="@drawable/email"
+                            android:hint="Email Id"
+                            android:letterSpacing="0.02"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <glog.leeway.com.home_page.Customfont.MyEditText
+                                android:id="@+id/phonenumber_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/title"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:drawableLeft="@drawable/phone"
+                                android:hint="Phone Number"
+                                android:inputType="number"
+                                android:letterSpacing="0.02"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="12dp" />
+
+                            <glog.leeway.com.home_page.Customfont.MyEditText
+                                android:id="@+id/alternative_phonenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:drawableLeft="@drawable/phone_two"
+                                android:hint="TIN NUMER"
+                                android:inputType="text"
+                                android:letterSpacing="0.02"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:layout_height="wrap_content">-->
+
+
+                        <!--<com.example.intellyelabs.siddus.customfont.MyEditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/pincode"-->
+                        <!--android:hint="Pincode"-->
+                        <!--android:background="@drawable/border"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:drawableLeft="@drawable/pin"-->
+                        <!--android:inputType="number"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColorHint="@color/color_hint"-->
+                        <!--android:letterSpacing="0.02"-->
+                        <!--/>-->
+
+
+                        <!--<com.example.intellyelabs.siddus.customfont.MyEditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/cust_citys"-->
+                        <!--android:hint="City"-->
+                        <!--android:background="@drawable/border"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:drawableLeft="@drawable/city_icon"-->
+                        <!--android:inputType="text"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColorHint="@color/color_hint"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:letterSpacing="0.02"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<com.example.intellyelabs.siddus.customfont.MyEditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/address"-->
+                        <!--android:hint="Address"-->
+                        <!--android:background="@drawable/border"-->
+                        <!--android:drawableLeft="@drawable/address"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:inputType="textPostalAddress"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textColorHint="@color/color_hint"-->
+                        <!--android:letterSpacing="0.02"-->
+                        <!--/>-->
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+
+                        android:orientation="vertical"
+
+
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:letterSpacing="0.02"
+                            android:padding="8dp"
+                            android:text="PRODUCT DETAILS"
+                            android:textColor="#ffff"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+
+
+                            <glog.leeway.com.home_page.Customfont.MyEditText
+                                android:id="@+id/item_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/border"
+                                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                                android:hint="Item Name"
+                                android:letterSpacing="0.02"
+                                android:padding="10dp"
+
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <glog.leeway.com.home_page.Customfont.MyEditText
+                                    android:id="@+id/quantity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/title"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border"
+                                    android:drawableLeft="@drawable/phone"
+                                    android:hint="Quantity"
+                                    android:inputType="number"
+                                    android:letterSpacing="0.02"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="12dp" />
+
+                                <glog.leeway.com.home_page.Customfont.MyEditText
+                                    android:id="@+id/rate_peritem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border"
+                                    android:drawableLeft="@drawable/phone_two"
+                                    android:hint="Rate Per Item"
+                                    android:inputType="numberDecimal"
+                                    android:letterSpacing="0.02"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <glog.leeway.com.home_page.Customfont.MyEditText
+                                    android:id="@+id/total_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/title"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border"
+                                    android:drawableLeft="@drawable/phone"
+                                    android:hint="Total"
+                                    android:inputType="number"
+                                    android:letterSpacing="0.02"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="12dp" />
+
+                                <Button
+                                    android:id="@+id/add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+
+
+                              android:text="ADD"
+                                    android:inputType="number"
+                                    android:letterSpacing="0.02"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/gray"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="ITEM"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="QUANTITY"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="RATE"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" /> <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="TOTAL"
+    android:gravity="center"
+    android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:id="@+id/close_icons"
+        android:src="@drawable/close"/>
+
+
+</LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            ></android.support.v7.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/cattext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:text="Category" />
+
+                                <TextView
+                                    android:id="@+id/subtext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="1"
+                                    android:text="Subcategory" />
+
+                                <TextView
+                                    android:id="@+id/ratetext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Rate" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <glog.leeway.com.home_page.Customfont.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="PAYMENT"
+                        android:textColor="#ffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Amount" />
+
+                            <glog.leeway.com.home_page.Customfont.MyEditText
+                                android:id="@+id/amount_of_event"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:drawableLeft="@drawable/ic_euro_symbol_black_24dp"
+android:editable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:drawablePadding="5dp"
+                                android:hint="Amount"
+                                android:inputType="numberDecimal"
+                                android:letterSpacing="0.02"
+                                android:padding="10dp"
+
+
+                                android:textColor="@color/black"
+                                android:textColorHint="#000000"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tax %" />
+
+                            <glog.leeway.com.home_page.Customfont.MyEditText
+                                android:id="@+id/taxamount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:drawableLeft="@drawable/ic_euro_symbol_black_24dp"
+
+                                android:drawablePadding="5dp"
+                                android:hint="Tax Amount 15 %"
+                                android:inputType="number"
+                                android:letterSpacing="0.02"
+                                android:padding="10dp"
+
+                                android:text="15"
+                                android:textColor="@color/black"
+                                android:textColorHint="#000000"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Amount" />
+
+
+                        <glog.leeway.com.home_page.Customfont.MyEditText
+                            android:id="@+id/total_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border"
+                            android:drawableLeft="@drawable/ic_euro_symbol_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Total"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.02"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <glog.leeway.com.home_page.Customfont.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Advance Amount" />
+
+                        <glog.leeway.com.home_page.Customfont.MyEditText
+                            android:id="@+id/advance_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border"
+                            android:drawableLeft="@drawable/ic_euro_symbol_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Advance"
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.02"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <glog.leeway.com.home_page.Customfont.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Balance Amount" />
+
+                        <glog.leeway.com.home_page.Customfont.MyEditText
+                            android:id="@+id/balace_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border"
+                            android:drawableLeft="@drawable/ic_euro_symbol_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Balance"
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.02"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+
+                            android:textColorHint="@color/black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/but_shape"
+                android:letterSpacing="0.02"
+                android:shadowColor="@color/black"
+                android:text="SAVE BILL"
+
+                android:textColor="#fcf9f9"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/bacj_icons"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content" />
+        <glog.leeway.com.home_page.Customfont.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item details"
+            android:textColor="#ffff"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
